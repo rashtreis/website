@@ -1,0 +1,245 @@
+@charset "utf-8";
+ 
+ 
+header{z-index: 1;
+    position:fixed;
+    top: 0px;
+    left:0px;   
+    padding: 10px;
+    background-color: lightseagreen;    
+    /*height:80px;*/
+    
+    width:100%;   
+    color: white;
+    font-size:20px;
+    font-weight: normal;
+    font-family: Impact, "Segoe UI";  
+
+    
+    }
+div.navbar{
+  width:600px;
+  margin: auto  ;
+  
+  background-color: lightseagreen;
+  
+  }
+  
+ul.navbar {
+    list-style-type: none; /*Изменяет вид маркера для каждого элемента списка.*/ 
+   margin: 0;
+   padding:0;
+}
+
+li.navitem {
+   float: left;
+}
+
+header li a { 
+    display: block; /*заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого.*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /*оформление текста */
+}
+
+header li a:hover:not(.active) {
+    background-color: rosybrown;
+}
+
+header .active {
+    background-color: #4CAF50;
+}
+
+body {
+  background: url(body_background.jpg);
+}
+ 
+ 
+ 
+ .blockgeeneral
+ { float:left;
+	/*overflow: scroll;*/
+	 height:600px;
+	width: 800px;
+	  position: fixed;
+	   top: 100px; /* Положение от нижнего края */
+    left: 35px; /* Положение от правого края */
+ }
+ 
+ .block1{
+	 float:left;
+	 margin-left:20px;
+	 margin-bottom:20px;
+ }
+ 
+ .block.image.name.price
+ {
+	
+	 height:280px;
+	width: 204px;
+	 /* border: 2px solid #ccc6c6; /* Параметры рамки */
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями Свойства width и height включают в себя значения полей и границ, но не отступов (margin). */
+ }
+	 
+.image
+{
+	height:200px;
+	width: 200px;
+  
+  position: static;
+   top: 5px; /* Положение от нижнего края */
+    left: 5px; /* Положение от правого края */
+  		}
+.image {
+  max-width: 100%;
+  height: 200px;
+  display: block;
+}
+.name
+{
+	
+    background: #fc0; /* Цвет фона */
+    width: 200px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    margin-top: 0px; /* Отступ сверху */
+   /*' border: 0px solid #000; /* Параметры рамки */
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+	text-overflow: clip;
+}
+
+.price
+{
+ background: #C0C9D0; /* Цвет фона */
+    width: 200px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    margin-top: 0px; /* Отступ сверху */
+   /*' border: 0px solid #000; /* Параметры рамки */
+    -moz-box-sizing: border-box; /* Для Firefox */  
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+
+
+
+
+#search {
+  /* устанавливаем ширину формы,
+  ** равную ширине поля ввода (183 + 37 + 15)	*/
+  width: 235px;
+  height: 29px;
+  
+  margin-left: 950px; /* Отступ сверху */
+	margin-top: 120px;
+}
+
+/* делаем инпуты плавающими, чтобы убрать лишние отступы,
+** и отключаем бордюры */
+#search input {
+  float: left;
+  border: none;
+}
+
+/* стили для поля ввода */
+#search .input {
+  width: 183px;
+  height: 28px;
+  /* внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки	*/
+  padding: 0 37px 1px 15px;
+  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
+  color: #555;
+  font: 13px/28px Tahoma, Arial, sans-serif;
+  outline: none; /*одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырех сторонах элемента. */
+}
+
+/* приходится использовать хак для FireFox
+** для вертикального выравнивания текста,
+** т.к. у него свои особые представления об этом */
+
+
+/* меняем оформление поля ввода при фокусе */
+#search .input:focus {
+  background-color: #E8E8E8;
+  background-position: 0 -29px;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+#search .submit {
+  width: 37px;
+  height: 29px;
+  cursor: pointer;
+
+  /* смещаем кнопку влево на собственную ширину,
+  ** чтобы она оказалась над полем ввода */
+  margin-left: -37px;
+
+  /* по-нормальному, здесь достаточно было бы указать background: none;
+  ** но приходится указывать фон из-за бага в IE */
+  background: url(dontexist.png);
+}
+
+
+
+
+
+
+.list
+{
+ height:330px;
+	width: 220px;
+	margin-left: 950px; /* Отступ сверху */
+	margin-top: 120px;
+	  border: 1px solid #ccc6c6; /* Параметры рамки 
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */	
+	}
+	
+	
+	.ball {
+list-style: none;
+margin: 0;
+}
+.ball a {
+width: 100%;
+color: #808285;
+text-decoration: none;
+display: inline-block;
+padding-left: 25px;
+height: 44px;
+line-height: 44px;
+font-size: 20px;
+position: relative;
+transition: .3s linear; /* Устанавливает эффект перехода между двумя состояниями элемента,*/
+}
+.ball a:before {
+content: "";
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #425273;
+position: absolute;
+left: -30px;
+top: 7px;
+}
+.ball li {
+position: relative;
+}
+.ball li:before {
+content: "";
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: #EC351D;
+position: absolute;
+top: 12px;
+left: -30px;
+z-index: 2;
+transition: .4s ease-in-out;
+}
+.ball li:hover:before {
+left: -20px;
+}
